@@ -1,5 +1,5 @@
 import typer
-from genrate_sample_data import make_sample_data , test_import1
+from src.ml_baseline.genrate_sample_data import make_sample_data , test_import1
 app = typer.Typer()
 
 @app.command()

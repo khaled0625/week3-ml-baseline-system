@@ -44,7 +44,7 @@ data_dir.mkdir(parents=True, exist_ok=True)
 def make_sample_data(*, root: Path | None = None, n_users: int = 50, seed: int = 42):
     # Using the root parameter to create paths, but for this case, data_dir is sufficient
     if root is not None:
-        data_dir = Path(root) / "data" / "processed1"
+        data_dir = Path(root) / "data" / "processed"
         data_dir.mkdir(parents=True, exist_ok=True)
 
     rng = np.random.default_rng(seed)
